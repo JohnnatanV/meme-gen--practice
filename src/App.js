@@ -47,7 +47,7 @@ function App() {
         </select>
         {/* Meme */}
         <div className="meme-box" id="meme">
-          <img className="meme-img" src={`/img/${memeImg}.png`} alt="meme" />
+          <img className="meme-img" src={`./img/${memeImg}.png`} alt="meme" />
           <span className="meme-text line-1">{line1}</span>
           <span className="meme-text line-2">{line2}</span>
         </div>
