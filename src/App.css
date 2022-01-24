@@ -1,21 +1,13 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #282f39;
+  height: 100vh;
+  min-height: 100%;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +16,88 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-body {
+  height: 80vh;
+  min-height: 100%;
+  padding: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.meme-picker,
+.meme-box,
+.text-box {
+  margin: 1rem;
+}
+
+.meme-picker {
+  font-size: large;
+}
+
+.meme-box {
+  position: relative;
+  margin: auto;
+  background-color: #282f39;
+}
+
+.meme-text {
+  color: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 3px #000, 0 0 5px #000, 0 0 3px #000, 0 0 5px #000,
+    0 0 3px #000, 0 0 5px #000, 0 0 3px #000, 0 0 5px #000, 0 0 3px #000,
+    0 0 5px #000, 0 0 3px #000, 0 0 5px #000, 0 0 3px #000, 0 0 5px #000,
+    0 0 3px #000, 0 0 5px #000;
+}
+
+.line-1 {
+  top: 5%;
+}
+
+.line-2 {
+  bottom: 6%;
+}
+
+.meme-input {
+  margin: 1rem;
+  font-size: 1.4rem;
+}
+
+.meme-input::placeholder {
+  text-align: center;
+}
+
+.btn {
+  font-size: 1.4rem;
+  padding: 0.4rem;
+  background-color: white;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: white;
+}
+
+@media screen and (max-width: 550px) {
+  .meme-picker,
+  .meme-input {
+    background-color: white;
   }
-  to {
-    transform: rotate(360deg);
+
+  .meme-img {
+    width: 100%;
+  }
+
+  .meme-text {
+    font-size: 1rem;
+  }
+
+  .meme-input {
+    font-size: 1.1rem;
   }
 }
